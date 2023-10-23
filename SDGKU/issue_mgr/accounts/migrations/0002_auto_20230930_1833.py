@@ -25,13 +25,25 @@ def populate_team(apps, schemaeditor):
         team_obj = Team(name=key, description=value)
         team_obj.save()
 
-class Migration(migrations.Migration):
+def populate_status(apps, schemaeditor):
+    entries = {
+        "to do": "An issue that has not yet been started",
+        "in progress": "An issue for which work has not yet been started",
+        "done": "An issue for which work has been completed"
+    }
+    Status = apps.get_model("issues", "Status")
+    for key, value in entries.items():
+        status_obj = Status(name=key, description=value)
+        status_obj.save()
 
+
+class Migration(migrations.Migration):
     dependencies = [
-        ('accounts', '0001_initial'),
+        ('accounts', "issues", '0001_initial'),
     ]
 
     operations = [
         migrations.RunPython(populate_role),
-        migrations.RunPython(populate_team)
+        migrations.RunPython(populate_team),
+        migrations.RunPython(populate_status)
     ]

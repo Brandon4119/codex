@@ -26,3 +26,5 @@ class CustomUser(AbstractUser):
         on_delete=models.CASCADE,
         null=True, blank=True
     )
+
+    
