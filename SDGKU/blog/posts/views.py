@@ -63,9 +63,8 @@ class PostUpdateView(
     fields = ["title", "subtitle", "body", "status"]
 
     def test_func(self):
-        # This must be true or false
         post = self.get_object()
-        post = self.request.user == post.author
+        return self.request.user == post.author
 
 
 class PostListView(ListView):
@@ -107,10 +106,6 @@ class ArchivedPostListView(LoginRequiredMixin, ListView):
             author=self.request.user
         ).order_by("created_on").reverse()
         return context
-
-
-
-
 
 
 # Create archived page or feature
