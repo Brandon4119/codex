@@ -1,0 +1,61 @@
+footer {
+    height: 10rem;
+    background-color: var(--secondary-color-900);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer nav {
+    width: max-content;
+}
+
+footer nav a {
+    color: var(--neutral-color);
+    text-decoration: none;
+    margin: 0px 1rem;
+    height: 2rem;
+}
+
+footer nav a:hover {
+    border-bottom: solid 2px var(--primary-color);
+}
+
+#emailForm input,
+#emailForm textarea {
+    border: none;
+    border-bottom: 3px solid var(--secondary-color);
+    height: 2.5rem;
+    width: 30rem;
+    outline: none;
+    background-color: var(--neutral-color);
+}
+
+#emailForm input::placeholder,
+#emailForm textarea::placeholder {
+    color: var(--surface-color);
+}
+
+#emailForm input:focus,
+#emailForm textarea:focus {
+    border-bottom: 3px solid var(--primary-color-300);
+}
+
+#emailForm input:hover,
+#emailForm textarea:hover {
+    background-color: #ffffff;
+}
+
+.primary-button {
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    padding: 2.5% 5%;
+    color: var(--neutral-color);
+    background-color: var(--primary-color-300);
+}
+
+.primary-button:hover {
+    background: linear-gradient(135deg, #7F66FF 0%, #AA99FF 100%);
+}

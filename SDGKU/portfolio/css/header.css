@@ -46,3 +46,7 @@ nav {
 .nav-link a:hover {
     border-bottom: solid 2px var(--primary-color);
 }
+
+#nav-check, .nav-btn {
+    display: none;
+}

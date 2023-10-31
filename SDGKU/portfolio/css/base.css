@@ -2,9 +2,9 @@
 /* Styles that we can reuse */
 
 :root {
-    --primary-color: #af9fff;
-    --primary-color-100: #eae5ff;
-    --primary-color-300: #7f66ff;
+    --primary-color: #8CBAF0;
+    --primary-color-100: #D2E4F9;
+    --primary-color-300: #78AFED;
 
     --secondary-color: #025834;
     --secondary-color-600: #04C876;
@@ -18,8 +18,6 @@
 
     --lobster-font: 'Lobster', sans-serif;
     --sans-font: 'SM sans', sans-serif;
-
-
 }
 
 .center {
@@ -58,6 +56,11 @@ h2 {
 }
 
 p {
-    color: var(--netural-color);
+    color: var(--neutral-color);
     font-size: 1.1rem;
+}
+
+.break {
+    position: absolute;
+    margin-top: -60;
 }

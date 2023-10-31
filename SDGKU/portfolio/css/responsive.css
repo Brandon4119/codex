@@ -1,0 +1,77 @@
+
+/* TABLET */
+@media(max-width:1007px) {
+    html {font-size: 12px;}
+}
+
+    /* ABOUT SECTION */
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container {
+        margin-bottom: 4rem;
+    }
+
+    .description-container {
+        width: 100%;
+    }
+
+    /* PROJECTS SECTION */
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card a {
+        width: 100%;
+        flex-direction: column;
+        height: min-content;
+    }
+
+    .project-card a img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        object-position: center 50%;
+    }
+
+/* PHONE */
+@media(max-width: 640px) {
+    html {font-size: 10px;}
+
+    header {
+        flex-direction: column;
+        height: max-content;
+        padding: 2%;
+    }
+
+    .nav-link {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        display: inline-block;
+    }
+
+    /* TOGGLE FUNCTION */
+#nav-check:not(:checked) ~ .nav-link {
+    height: 0px;
+    overflow: hidden;
+}
+
+#nav-check:checked ~ .nav-link {
+    height: auto;
+    overflow: auto;
+}
+
+footer {
+    flex-direction: column;
+}
+
+footer nav {
+    height: fit-content;
+}
+}
+

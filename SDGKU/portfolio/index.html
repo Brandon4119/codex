@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     
@@ -17,7 +20,7 @@
         <!-- LEFT SIDE -->
         <div class="logo center">
             <a href="">
-                <h2>My name</h2>
+                <h2>Brandon Patrick</h2>
             </a>
         </div>
 
@@ -36,14 +39,108 @@
 
 
             <div class="nav-link center">
-                <a href="">About me</a>
-                <a href="">Projects</a>
-                <a href="">Experience</a>
-                <a href="">Contact</a>
+                <a href="section-1">About me</a>
+                <a href="section-2">Projects</a>
+                <a href="section-3">Experience</a>
+                <a href="section-4">Contact</a>
             </div>
         </nav>
 
     </header>
 
+    <div id="section-1" class="break"></div>
+    <section class="about-section">
+
+        <div class="img-container center">
+            <img id="about-img" src="./img/logo.png">
+        </div>
+
+        <div class="description-container center">
+
+            <div class="center" style="flex-direction: column;">
+                <h1>My role as dev</h1>
+                <h2>Brandon Patrick</h2>
+            </div>
+
+            <p>
+                Hello, I'm Brandon, a passionate front-end developer with a love for crafting captivating digital experiences. With a keen eye for design and a knack for turning ideas into pixel-perfect reality, I'm on a mission to make the web a more beautiful and user-friendly place, one line of code at a time. I specialize in building responsive and interactive websites that not only look stunning but also provide seamless user experiences. From designing elegant user interfaces to translating them into code, I'm all about making the web a better place for everyone.
+            </p>
+
+            <div class="skills-list center">
+                <h2>Skills</h2>
+
+                <div class="skills center">
+                    <label for="">HTML </label>
+                    <label for="">CSS </label>
+                    <label for="">JAVASCRIPT </label>
+                    <label for="">UI/UX </label>
+                    <label for="">REACT</label>
+                    <label for="">DJANGO</label>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="section-2" class="break"></div>
+    <section class="projects-section center">
+        <h2>projects</h2>
+
+        <div id="projects-list">
+
+
+        </div>
+    </section>
+
+    <div id="section-3" class="break"></div>
+    <section class="experience-section center">
+        <h2>Experience/Education</h2>
+
+        <div id="experience-list">
+
+        </div>
+    </section>
+
+    <div id="section-4" class="break"></div>
+    <section class="contact-section center">
+
+        <h2>Contact me</h2>
+        <p>Feel free to drop me a like below</p>
+
+        <form id="emailForm">
+
+            <input type="text" id="name" placeholder="Name" required> <br>
+            <input type="email" id="email" place holder="Email" required> <br>
+            <input type="text" id="subject" placeholder="Subject"> <br>
+            <textarea id="message" rows="4" placeholder="Message" required></textarea> <br>
+            <button class="primary-button" type="submit">Send Email</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <a href="">
+            <h2>Brandon Patrick</h2>
+        </a>
+
+        <nav class="nav-footer center">
+            <a href="section-1">About me</a>
+            <a href="section-2">Project</a>
+            <a href="section-3">Projects</a>
+            <a href="section-4">Experience</a>
+            <a href="section-5">Contact</a>
+        </nav>
+
+    </footer>
+
+
 </body>
+
+<script src="./js/email.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/naviagtion.js"></script>
+
 </html>
